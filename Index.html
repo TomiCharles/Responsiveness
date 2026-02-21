@@ -1,0 +1,401 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "DM Serif Text", serif;
+      }
+      nav {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav-container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .link-wrapper {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(240, 238, 238);
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+        font-weight: 300px;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .btn {
+        width: 150px;
+        background-color: #012c30;
+        padding: 15px 30px;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dot {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dot img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .sect {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sect-container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .h1 {
+        font-size: 3rem;
+        color: #012c30;
+      }
+      .div {
+        width: 100%;
+        height: 80vh;
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      .sect1 {
+        width: 100%;
+        height: 500px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sect-container1 {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div2 {
+        width: 400px;
+        height: 400px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+      .p {
+        max-width: 70%;
+      }
+      .para {
+        color: orange;
+        margin-top: auto;
+      }
+      .pa {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        color: #012c30;
+      }
+      .d {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .hero-meta {
+        margin: 30px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: -60px; /* pulls it up under the image */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        max-width: 900px;
+        margin-right: 150px;
+      }
+
+      .meta-left {
+        max-width: 70%;
+      }
+
+      .meta-text {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 12px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .tags span {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 999px;
+        background: #f2f4f7;
+        color: #333;
+      }
+
+      .contact-link {
+        font-size: 13px;
+        color: #ff6a00;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .meta-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: url("avatar.jpg") center/cover;
+      }
+      .paragraph {
+        color: #012c30;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+      }
+      .sect3 {
+        width: 100%;
+        height: 80%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+      }
+      .sect-container {
+        width: 80%;
+        height: 100%;
+        background-color: #012c30;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      .h1 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: white;
+      }
+      .div5 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 0;
+        margin-left: 150px;
+        margin-bottom: 300px;
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        width: 1000px;
+        height: 300px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+      .card {
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      .ima {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        margin-left: 1550px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1>Logo</h1>
+        <ul class="link-wrapper">
+          <li><a href="">Home</a></li>
+          <li><a href="">Work</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+        <button class="btn">
+          Let's Chat
+          <span class="dot"
+            ><img src="/images/dot-svgrepo-com.svg" alt=""
+          /></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="sect">
+      <div class="sect-container">
+        <h1 class="h1">
+          Development <br />
+          ‹/› Agency
+          <img src="/images/checkered-flags-svgrepo-com.svg" alt="" />
+        </h1>
+
+        <div class="div">
+          <img
+            class="img"
+            src="/images/pexels-mikhail-nilov-7988043.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="sect1">
+      <div class="sect-container1">
+        <div class="div2">
+          <div class="d">
+            <p class="p">
+              We bring light, joy to the old, mundane or otherwise overlooked.
+            </p>
+            <p class="pa"></p>
+          </div>
+          <a href="#" class="contact-link">Contact us</a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-left">
+          <p class="meta-text"></p>
+
+          <div class="tags">
+            <span>E-commerce</span>
+            <span>Fintech</span>
+            <span>Crypto</span>
+            <span>Robotics</span>
+            <span>Saas</span>
+            <span>Product Design</span>
+          </div>
+        </div>
+
+        <div class="meta-right">
+          <div class="avatar"></div>
+          <p><strong>30+</strong><br />Members</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="paragraph">Trusted by your favourite brands and startups</p>
+
+    <section class="sect3">
+      <div class="sect-container">
+        <div class="div5">
+          <h1 class="h1">
+            Our <br />
+            recent <br />
+            works
+          </h1>
+          <div class="ima">
+            <img
+              src="/images/button-circle-round-arrow-previous-svgrepo-com (7).svg"
+              alt=""
+            />
+            <img
+              src="/images/button-circle-round-arrow-previous-svgrepo-com (8).svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <img
+              class="images"
+              src="/images/karolina-grabowska-H_eb_VfG2Ow-unsplash (2).jpg"
+              alt=""
+            />
+          </div>
+          <div class="card">
+            <img
+              class="images"
+              src="/images/desmond-marshall-MOtzaUPRxR8-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card">
+            <img
+              class="images"
+              src="/images/yash-menghani-rJ8MF_jWkOo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
